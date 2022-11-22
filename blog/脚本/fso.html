@@ -1,0 +1,792 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="FileSystemObject.files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Administrator</o:Author>
+  <o:LastAuthor>tclsevers</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2015-02-12T11:03:00Z</o:Created>
+  <o:LastSaved>2015-02-12T11:03:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>380</o:Words>
+  <o:Characters>2169</o:Characters>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2544</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='margin-top:15.0pt;text-align:left;
+mso-pagination:widow-orphan;mso-outline-level:3;background:#F9F9F9'><b><span
+style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;mso-hansi-font-family:
+Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'>属性</span></b><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=709
+ style='width:531.75pt;background:#F9F9F9;border-collapse:collapse;border:none;
+ mso-border-alt:solid #AAAAAA .75pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=190 valign=bottom style='width:142.5pt;border:solid #AAAAAA 1.0pt;
+  mso-border-alt:solid #AAAAAA .75pt;background:#D5D5D5;padding:3.75pt 11.25pt 3.75pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>属性</span></b><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td valign=bottom style='border:solid #AAAAAA 1.0pt;border-left:none;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#D5D5D5;padding:3.75pt 11.25pt 3.75pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>描述</span></b><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/prop_drives.asp"><span style='mso-bidi-font-size:
+  12.0pt;color:#900B09'>Drives</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回本地计算机上所有驱动器对象的集合。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=left style='margin-top:15.0pt;text-align:left;
+mso-pagination:widow-orphan;mso-outline-level:3;background:#F9F9F9'><b><span
+style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;mso-hansi-font-family:
+Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'>方法</span></b><b><span
+lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=709
+ style='width:531.75pt;background:#F9F9F9;border-collapse:collapse;border:none;
+ mso-border-alt:solid #AAAAAA .75pt;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=190 valign=bottom style='width:142.5pt;border:solid #AAAAAA 1.0pt;
+  mso-border-alt:solid #AAAAAA .75pt;background:#D5D5D5;padding:3.75pt 11.25pt 3.75pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>方法</span></b><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td valign=bottom style='border:solid #AAAAAA 1.0pt;border-left:none;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#D5D5D5;padding:3.75pt 11.25pt 3.75pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><b><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>描述</span></b><b><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_buildpath.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>BuildPath</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>将一个名称追加到已有的路径后</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_copyfile.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>CopyFile</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>从一个位置向另一个位置拷贝一个或多个文件。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_copyfolder.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>CopyFolder</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>从一个位置向另一个位置拷贝一个或多个文件夹。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_createfolder.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>CreateFolder</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>创建新文件夹。</span><span lang=EN-US style='font-size:9.0pt;font-family:Verdana;
+  mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_createtextfile_filesystem.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>CreateTextFile</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>创建文本文件，并返回一个</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'> <span
+  class=SpellE>TextStream</span> </span><span style='font-size:9.0pt;
+  font-family:宋体;mso-ascii-font-family:Verdana;mso-hansi-font-family:Verdana;
+  mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'>对象。</span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_deletefile.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>DeleteFile</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>删除一个或者多个指定的文件。</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_deletefolder.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>DeleteFolder</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>删除一个或者多个指定的文件夹。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_driveexists.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>DriveExists</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>检查指定的驱动器是否存在。</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_fileexists.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>FileExists</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>检查指定的文件是否存在。</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_folderexists.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>FolderExists</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>检查某个文件夹是否存在。</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getabsolutepathname.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetAbsolutePathName</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>针对指定的路径返回从驱动器根部起始的完整路径。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getbasename.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetBaseName</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回指定文件或者文件夹的基名称。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getdrive.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetDrive</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回指定路径中所对应的驱动器的</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'> Drive </span><span style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:
+  Verdana;mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;
+  mso-font-kerning:0pt'>对象。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getdrivename.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetDriveName</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回指定的路径的驱动器名称。</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getextensionname.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetExtensionName</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回在指定的路径中最后一个成分的文件扩展名。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getfile.asp"><span style='mso-bidi-font-size:
+  12.0pt;color:#900B09'>GetFile</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回一个针对指定路径的</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'> File </span><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>对象。</span><span lang=EN-US style='font-size:9.0pt;font-family:Verdana;
+  mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getfilename.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetFileName</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回在指定的路径中最后一个成分的文件名。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getfolder.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetFolder</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回一个针对指定路径的</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'> Folder </span><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>对象。</span><span lang=EN-US style='font-size:9.0pt;font-family:Verdana;
+  mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getparentfoldername.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetParentFolderName</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回在指定的路径中最后一个成分的父文件名称。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_getspecialfolder.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetSpecialFolder</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回某些</span><span lang=EN-US style='font-size:9.0pt;font-family:Verdana;
+  mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'> Windows </span><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>的特殊文件夹的路径。</span><span lang=EN-US style='font-size:9.0pt;font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_gettempname.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>GetTempName</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>返回一个随机生成的文件或文件夹。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_movefile.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>MoveFile</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>从一个位置向另一个位置移动一个或多个文件。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_movefolder.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>MoveFolder</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>从一个位置向另一个位置移动一个或多个文件夹。</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #AAAAAA 1.0pt;border-top:none;mso-border-top-alt:
+  solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;background:#EFEFEF;
+  padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><a
+  href="http://www.w3school.com.cn/asp/met_opentextfile.asp"><span
+  style='mso-bidi-font-size:12.0pt;color:#900B09'>OpenTextFile</span></a><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;mso-border-top-alt:solid #AAAAAA .75pt;
+  mso-border-left-alt:solid #AAAAAA .75pt;mso-border-alt:solid #AAAAAA .75pt;
+  background:#EFEFEF;padding:4.5pt 11.25pt 4.5pt 4.5pt'>
+  <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
+  style='font-size:9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;
+  mso-hansi-font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'>打开文件，并返回一个用于访问此文件的</span><span lang=EN-US style='font-size:9.0pt;
+  font-family:Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:
+  0pt'> <span class=SpellE>TextStream</span> </span><span style='font-size:
+  9.0pt;font-family:宋体;mso-ascii-font-family:Verdana;mso-hansi-font-family:
+  Verdana;mso-bidi-font-family:宋体;color:black;mso-font-kerning:0pt'>对象。</span><span
+  lang=EN-US style='font-size:9.0pt;font-family:Verdana;mso-bidi-font-family:
+  宋体;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
